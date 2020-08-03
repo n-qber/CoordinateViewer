@@ -1,37 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "coordinateviewer",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Coordinate Viewer",
+  "description": "To see your coordinates in alpha",
   "authors": [
-    "Me!"
+    "Nicolas Bertozzo"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://earthcomputer.net/",
+    "sources": "https://github.com/n-qber/CoordinateViewer"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/coordinateviewer/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
-  },
+
   "mixins": [
-    "modid.mixins.json"
+    "coordinateviewer.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "flamingo": "*"
+    "fabricloader": ">=0.7.6",
+    "minecraft": "1.0.0-alpha.2.2"
   }
 }
